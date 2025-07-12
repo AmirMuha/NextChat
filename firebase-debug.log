@@ -1,0 +1,149 @@
+[debug] [2025-07-12T13:30:17.023Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T13:30:17.026Z] Command:       /home/amirmuha/.nvm/versions/node/v22.12.0/bin/node /home/amirmuha/.nvm/versions/node/v22.12.0/bin/firebase init --debug
+[debug] [2025-07-12T13:30:17.027Z] CLI Version:   14.10.1
+[debug] [2025-07-12T13:30:17.027Z] Platform:      linux
+[debug] [2025-07-12T13:30:17.027Z] Node Version:  v22.12.0
+[debug] [2025-07-12T13:30:17.027Z] Time:          Sat Jul 12 2025 17:00:17 GMT+0330 (Iran Standard Time)
+[debug] [2025-07-12T13:30:17.027Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T13:30:17.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T13:30:17.034Z] > authorizing via signed-in user (benjamin.carter0110@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/amirmuha/projects/NextChat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-12T13:30:26.972Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:26.973Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:26.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-12T13:30:37.019Z] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ProxyAgent'
+    |     property 'cache' -> object with constructor 'LRUCache'
+    |     property 'valList' -> object with constructor 'Array'
+    |     ...
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'agent' closes the circle
+[debug] [2025-07-12T13:30:37.483Z] FirebaseError: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ProxyAgent'
+    |     property 'cache' -> object with constructor 'LRUCache'
+    |     property 'valList' -> object with constructor 'Array'
+    |     ...
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'agent' closes the circle
+    at RetryOperation._fn (/home/amirmuha/.nvm/versions/node/v22.12.0/lib/node_modules/firebase-tools/lib/apiv2.js:296:88)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2025-07-12T13:30:44.910Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T13:30:44.913Z] Command:       /home/amirmuha/.nvm/versions/node/v22.12.0/bin/node /home/amirmuha/.nvm/versions/node/v22.12.0/bin/firebase init --debug
+[debug] [2025-07-12T13:30:44.913Z] CLI Version:   14.10.1
+[debug] [2025-07-12T13:30:44.913Z] Platform:      linux
+[debug] [2025-07-12T13:30:44.913Z] Node Version:  v22.12.0
+[debug] [2025-07-12T13:30:44.914Z] Time:          Sat Jul 12 2025 17:00:44 GMT+0330 (Iran Standard Time)
+[debug] [2025-07-12T13:30:44.914Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T13:30:44.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T13:30:44.921Z] > authorizing via signed-in user (benjamin.carter0110@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/amirmuha/projects/NextChat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-12T13:30:50.932Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:50.933Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:50.941Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-12T13:30:53.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-12T13:30:53.298Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nextchat-9b596 (NextChat) 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-07-12T13:30:55.246Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:55.246Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:55.247Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com [none]
+[debug] [2025-07-12T13:30:55.247Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com x-goog-quota-user=projects/nextchat-9b596
+[debug] [2025-07-12T13:30:58.576Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com 200
+[debug] [2025-07-12T13:30:58.578Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com [omitted]
+[warn] ⚠  firestore: missing required API firestore.googleapis.com. Enabling now... 
+[debug] [2025-07-12T13:30:58.582Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:58.583Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:30:58.585Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com:enable [none]
+[debug] [2025-07-12T13:30:58.586Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com:enable x-goog-quota-user=projects/nextchat-9b596
+[debug] [2025-07-12T13:31:04.236Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com:enable 200
+[debug] [2025-07-12T13:31:04.237Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/nextchat-9b596/services/firestore.googleapis.com:enable [omitted]
+[debug] [2025-07-12T13:31:14.256Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:31:14.257Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:31:14.259Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases [none]
+[debug] [2025-07-12T13:31:16.154Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases 200
+[debug] [2025-07-12T13:31:16.155Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases {}
+[debug] [2025-07-12T13:31:16.156Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:31:16.156Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:31:16.157Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/locations [none]
+[debug] [2025-07-12T13:31:18.840Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/locations 200
+[debug] [2025-07-12T13:31:18.842Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/locations {"locations":[{"name":"projects/nextchat-9b596/locations/eur3","labels":{"appengine.googleapis.com/geo":"europe-west","cloud.googleapis.com/location":"eur3","cloud.googleapis.com/geo":"eur3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"eur3","displayName":"Europe"},{"name":"projects/nextchat-9b596/locations/nam5","labels":{"appengine.googleapis.com/geo":"us-central","cloud.googleapis.com/location":"nam5","cloud.googleapis.com/geo":"nam5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam5","displayName":"United States"},{"name":"projects/nextchat-9b596/locations/nam7","labels":{"cloud.googleapis.com/location":"nam7","cloud.googleapis.com/geo":"nam7"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam7","displayName":"United States"},{"name":"projects/nextchat-9b596/locations/africa-south1","labels":{"cloud.googleapis.com/location":"africa-south1","cloud.googleapis.com/region":"africa-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"africa-south1","displayName":"Johannesburg"},{"name":"projects/nextchat-9b596/locations/asia-east1","labels":{"appengine.googleapis.com/region":"asia-east1","cloud.googleapis.com/location":"asia-east1","cloud.googleapis.com/region":"asia-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/nextchat-9b596/locations/asia-east2","labels":{"appengine.googleapis.com/region":"asia-east2","cloud.googleapis.com/location":"asia-east2","cloud.googleapis.com/region":"asia-east2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/nextchat-9b596/locations/asia-northeast1","labels":{"appengine.googleapis.com/region":"asia-northeast1","cloud.googleapis.com/location":"asia-northeast1","cloud.googleapis.com/region":"asia-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/nextchat-9b596/locations/asia-northeast2","labels":{"appengine.googleapis.com/region":"asia-northeast2","cloud.googleapis.com/location":"asia-northeast2","cloud.googleapis.com/region":"asia-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/nextchat-9b596/locations/asia-northeast3","labels":{"appengine.googleapis.com/region":"asia-northeast3","cloud.googleapis.com/location":"asia-northeast3","cloud.googleapis.com/region":"asia-northeast3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/nextchat-9b596/locations/asia-south1","labels":{"appengine.googleapis.com/region":"asia-south1","cloud.googleapis.com/location":"asia-south1","cloud.googleapis.com/region":"asia-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/nextchat-9b596/locations/asia-south2","labels":{"cloud.googleapis.com/location":"asia-south2","cloud.googleapis.com/region":"asia-south2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south2","displayName":"Delhi"},{"name":"projects/nextchat-9b596/locations/asia-southeast1","labels":{"appengine.googleapis.com/region":"asia-southeast1","cloud.googleapis.com/location":"asia-southeast1","cloud.googleapis.com/region":"asia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/nextchat-9b596/locations/asia-southeast2","labels":{"appengine.googleapis.com/region":"asia-southeast2","cloud.googleapis.com/location":"asia-southeast2","cloud.googleapis.com/region":"asia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/nextchat-9b596/locations/australia-southeast1","labels":{"appengine.googleapis.com/region":"australia-southeast1","cloud.googleapis.com/location":"australia-southeast1","cloud.googleapis.com/region":"australia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/nextchat-9b596/locations/australia-southeast2","labels":{"cloud.googleapis.com/location":"australia-southeast2","cloud.googleapis.com/region":"australia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/nextchat-9b596/locations/europe-central2","labels":{"appengine.googleapis.com/region":"europe-central2","cloud.googleapis.com/location":"europe-central2","cloud.googleapis.com/region":"europe-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/nextchat-9b596/locations/europe-north1","labels":{"cloud.googleapis.com/location":"europe-north1","cloud.googleapis.com/region":"europe-north1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north1","displayName":"Finland"},{"name":"projects/nextchat-9b596/locations/europe-north2","labels":{"cloud.googleapis.com/location":"europe-north2","cloud.googleapis.com/region":"europe-north2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north2","displayName":"Stockholm"},{"name":"projects/nextchat-9b596/locations/europe-southwest1","labels":{"cloud.googleapis.com/location":"europe-southwest1","cloud.googleapis.com/region":"europe-southwest1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/nextchat-9b596/locations/europe-west1","labels":{"cloud.googleapis.com/location":"europe-west1","cloud.googleapis.com/region":"europe-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/nextchat-9b596/locations/europe-west10","labels":{"cloud.googleapis.com/location":"europe-west10","cloud.googleapis.com/region":"europe-west10"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west10","displayName":"Berlin"},{"name":"projects/nextchat-9b596/locations/europe-west12","labels":{"cloud.googleapis.com/location":"europe-west12","cloud.googleapis.com/region":"europe-west12"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west12","displayName":"Turin"},{"name":"projects/nextchat-9b596/locations/europe-west2","labels":{"appengine.googleapis.com/region":"europe-west2","cloud.googleapis.com/location":"europe-west2","cloud.googleapis.com/region":"europe-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west2","displayName":"London"},{"name":"projects/nextchat-9b596/locations/europe-west3","labels":{"appengine.googleapis.com/region":"europe-west3","cloud.googleapis.com/location":"europe-west3","cloud.googleapis.com/region":"europe-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/nextchat-9b596/locations/europe-west4","labels":{"cloud.googleapis.com/location":"europe-west4","cloud.googleapis.com/region":"europe-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/nextchat-9b596/locations/europe-west6","labels":{"appengine.googleapis.com/region":"europe-west6","cloud.googleapis.com/location":"europe-west6","cloud.googleapis.com/region":"europe-west6"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/nextchat-9b596/locations/europe-west8","labels":{"cloud.googleapis.com/location":"europe-west8","cloud.googleapis.com/region":"europe-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west8","displayName":"Milan"},{"name":"projects/nextchat-9b596/locations/europe-west9","labels":{"cloud.googleapis.com/location":"europe-west9","cloud.googleapis.com/region":"europe-west9"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west9","displayName":"Paris"},{"name":"projects/nextchat-9b596/locations/me-central1","labels":{"cloud.googleapis.com/location":"me-central1","cloud.googleapis.com/region":"me-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central1","displayName":"Doha"},{"name":"projects/nextchat-9b596/locations/me-central2","labels":{"cloud.googleapis.com/location":"me-central2","cloud.googleapis.com/region":"me-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central2","displayName":"Dammam"},{"name":"projects/nextchat-9b596/locations/me-west1","labels":{"cloud.googleapis.com/location":"me-west1","cloud.googleapis.com/region":"me-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/nextchat-9b596/locations/northamerica-northeast1","labels":{"appengine.googleapis.com/region":"northamerica-northeast1","cloud.googleapis.com/location":"northamerica-northeast1","cloud.googleapis.com/region":"northamerica-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/nextchat-9b596/locations/northamerica-northeast2","labels":{"cloud.googleapis.com/location":"northamerica-northeast2","cloud.googleapis.com/region":"northamerica-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/nextchat-9b596/locations/northamerica-south1","labels":{"cloud.googleapis.com/location":"northamerica-south1","cloud.googleapis.com/region":"northamerica-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-south1","displayName":"Mexico"},{"name":"projects/nextchat-9b596/locations/southamerica-east1","labels":{"appengine.googleapis.com/region":"southamerica-east1","cloud.googleapis.com/location":"southamerica-east1","cloud.googleapis.com/region":"southamerica-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/nextchat-9b596/locations/southamerica-west1","labels":{"cloud.googleapis.com/location":"southamerica-west1","cloud.googleapis.com/region":"southamerica-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/nextchat-9b596/locations/us-central1","labels":{"cloud.googleapis.com/location":"us-central1","cloud.googleapis.com/region":"us-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-central1","displayName":"Iowa"},{"name":"projects/nextchat-9b596/locations/us-east1","labels":{"appengine.googleapis.com/region":"us-east1","cloud.googleapis.com/location":"us-east1","cloud.googleapis.com/region":"us-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/nextchat-9b596/locations/us-east4","labels":{"appengine.googleapis.com/region":"us-east4","cloud.googleapis.com/location":"us-east4","cloud.googleapis.com/region":"us-east4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/nextchat-9b596/locations/us-east5","labels":{"cloud.googleapis.com/location":"us-east5","cloud.googleapis.com/region":"us-east5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east5","displayName":"Columbus"},{"name":"projects/nextchat-9b596/locations/us-south1","labels":{"cloud.googleapis.com/location":"us-south1","cloud.googleapis.com/region":"us-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-south1","displayName":"Dallas"},{"name":"projects/nextchat-9b596/locations/us-west1","labels":{"appengine.googleapis.com/region":"us-west1","cloud.googleapis.com/location":"us-west1","cloud.googleapis.com/region":"us-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west1","displayName":"Oregon"},{"name":"projects/nextchat-9b596/locations/us-west2","labels":{"appengine.googleapis.com/region":"us-west2","cloud.googleapis.com/location":"us-west2","cloud.googleapis.com/region":"us-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/nextchat-9b596/locations/us-west3","labels":{"appengine.googleapis.com/region":"us-west3","cloud.googleapis.com/location":"us-west3","cloud.googleapis.com/region":"us-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/nextchat-9b596/locations/us-west4","labels":{"appengine.googleapis.com/region":"us-west4","cloud.googleapis.com/location":"us-west4","cloud.googleapis.com/region":"us-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west4","displayName":"Las Vegas"},{"name":"projects/nextchat-9b596/locations/us-west8","labels":{"cloud.googleapis.com/location":"us-west8","cloud.googleapis.com/region":"us-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west8","displayName":"Phoenix"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-07-12T13:32:14.709Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:14.710Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:14.712Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/nextchat-9b596/releases pageSize=10&pageToken=
+[debug] [2025-07-12T13:32:18.396Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/nextchat-9b596/releases 200
+[debug] [2025-07-12T13:32:18.396Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/nextchat-9b596/releases {}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-07-12T13:32:21.938Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:21.938Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:21.938Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:21.938Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:32:21.939Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-07-12T13:32:21.939Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-07-12T13:32:25.041Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/indexes 404
+[debug] [2025-07-12T13:32:25.042Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/indexes {"error":{"code":404,"message":"Project 'nextchat-9b596' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[info] ✔  Wrote firestore.rules 
+[info] ✔  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2025-07-12T13:32:25.064Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 404
+[debug] [2025-07-12T13:32:25.064Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nextchat-9b596/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"error":{"code":404,"message":"Project 'nextchat-9b596' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[warn] ⚠  genkit: Stopped Genkit initialization 
+[info] 
+=== App Hosting Setup
+[debug] [2025-07-12T13:33:30.124Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:33:30.124Z] Checked if tokens are valid: true, expires at: 1752330164412
+[debug] [2025-07-12T13:33:30.125Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/nextchat-9b596/billingInfo [none]
+[debug] [2025-07-12T13:33:33.034Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/nextchat-9b596/billingInfo 200
+[debug] [2025-07-12T13:33:33.034Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/nextchat-9b596/billingInfo {"name":"projects/nextchat-9b596/billingInfo","projectId":"nextchat-9b596","billingAccountName":"","billingEnabled":false}
+[error] 
+[error] Error: Firebase App Hosting requires billing to be enabled on your project. To upgrade, visit the following URL: https://console.firebase.google.com/project/nextchat-9b596/usage/details
